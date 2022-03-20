@@ -1,1 +1,1 @@
-Olá este projeto contém os exercicios da semana 3 do curso DevIn[NDD]
+Olá, este projeto contém os exercicios da semana 3 do curso DevIn[NDD]
