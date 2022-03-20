@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevIn[NDD] - M1S03Ex2</title>
+</head>
+
+<body>
+  <h1>M1S03Ex2</h1>
+  <p>
+    Utilizando JavaScript, peça a confirmação do usuário ao clicar em algum botão, perguntando se ele deseja realmente
+    realizar aquela ação (você pode utilizar a página criada nos exercícios da semana 1, ou criar uma nova).
+  </p>
+
+  <button onclick="myFunction()">Clique aqui</button>
+  <p id="bot"> </p>
+
+  <Script>
+    function myFunction() {
+      let msg;
+      if (confirm("você quer realmente clicar?") == true) {
+        msg = "Você confirmou!";
+      } else {
+        msg = "Você cancelou!";
+      }
+      document.getElementById("bot").innerHTML = msg;
+    }
+  </Script>
+</body>
+
+</html>
