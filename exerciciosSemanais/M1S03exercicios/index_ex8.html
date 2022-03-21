@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevIn[NDD] - M1S03Ex8</title>
+</head>
+
+<body>
+  <h1>M1S03Ex8</h1>
+  <p>
+    Faça 3 prompts ao usuário: no primeiro, pergunte qual o tipo de cálculo ele deseja fazer (“+”, “-”, “*” ou “/”). No
+    segundo, pergunte o primeiro valor que deseja calcular. No terceiro, o segundo valor que deseja calcular. Em
+    seguida, realize o cálculo e exiba na tela um alert contendo o texto “O resultado do seu cálculo é: X”, onde X é o
+    resultado final do cálculo solicitado pelo usuário.
+  </p>
+  <script>
+    var tipoCalc = prompt("Qual tipo de cálculo desja fazer?", "+ , - , * , / ");
+    var valor1 = parseInt(prompt("Digite o primeiro valor", "1"));
+    var valor2 = parseInt(prompt("Digite o segundo valor", "1"));
+    function calcular() {
+      if (tipoCalc == "+") {
+        resultado = valor1 + valor2;
+      } else {
+        if (tipoCalc == "-") {
+          resultado = valor1 - valor2;
+        } else {
+          if (tipoCalc == "*") {
+            resultado = valor1 * valor2;
+          } else {
+            if (tipoCalc == "/") {
+              resultado = valor1 / valor2;
+            } else {
+              alert("atualize a página e insira uma operação válida '+ , - , * , /'")
+            }
+          }
+        }
+      }
+      alert("O resultado do seu cálculo é " + resultado);
+    }
+    calcular()
+  </script>
+</body>
+
+</html>
