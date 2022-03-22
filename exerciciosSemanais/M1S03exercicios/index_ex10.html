@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevIn[NDD] - M1S03Ex10</title>
+</head>
+
+<body>
+  <h1>M1S03Ex10</h1>
+  <p>
+    Ao entrar na página, seu script deve realizar 2 prompts ao usuário: um solicitando um “valor inicial”, e outro um
+    valor para a “raíz”. Após o usuário inserir esses valores, o seu script deve calcular os 10 primeiros valores da
+    sequência e exibir na tela. Relembrando: P.A. (Progressão Aritmética) é uma sequência numérica em que cada termo, a
+    partir do segundo, é igual à soma do termo anterior com a raiz. Exemplo: Valor inicial = 1; raiz = 3; P.A. = 1, 4,
+    7, 10, 13, 16, 19, 22, 25, 28.
+  </p>
+
+  <script>
+    var resultado = [];
+    var valorInicial = parseInt(prompt("Digite um valor inicial"))
+    var raiz = parseInt(prompt("Digite um valor para a raíz"))
+    for (i = 0; i < 10; i++) {
+      resultado[i] = (valorInicial += raiz);
+    }
+    alert(" A sequência P.A. com raíz " + raiz + " é: \n " + resultado);
+
+  </script>
+</body>
+
+</html>
